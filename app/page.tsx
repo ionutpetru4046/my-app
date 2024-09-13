@@ -7,8 +7,8 @@ import {
 
 export default function Home() {
   return (
-      <main className="flex bg-white color-white flex-col items-center justify-between p-24">
-      <h1 className="mb-20">My Portofolio</h1>
+      <main className="flex bg-red color-red flex-col items-center justify-between p-24">
+      <h1 className="items-center mb-20 text-amber-400">My Portofolio</h1>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
