@@ -1,24 +1,35 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 import { fontFamily } from "tailwindcss/defaultTheme"
 
-const config: Config = {
-    darkMode: ["class"],
+
+const config = {
+	darkMode: "class",
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-	// Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+
   ],
+  prefix: "",
   theme: {
+	container: {
+		center: true,
+		padding: "2rem",
+		screens: {
+			"2x1": "1400px",
+		},
+	},
   	extend: {
 		fontFamily: {
 			sans: ["var(--font-sans)", ...fontFamily.sans],
 		},
   		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
+			border: "hsl(var(--border))",
+			input: "hsl(var(--input))",
+			ring: "hsl(var(--ring))",
+			background: 'hsl(var(--background))',
+			foreground: 'hsl(var(--foreground))',
+			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
   			},
@@ -46,9 +57,6 @@ const config: Config = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',
@@ -78,6 +86,9 @@ const config: Config = {
 		  },
   	}
   },
-  plugins: [require("tailwindcss-animate")],
-};
-export default config;
+	plugins: [require("tailwindcss-animate"), ],
+} satisfies Config
+
+
+export default config
+
