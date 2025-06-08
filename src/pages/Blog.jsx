@@ -36,7 +36,7 @@ const Blog = () => {
       style={{ backgroundImage: 'url(/images/blog-bg.jpg)' }}
     >
       <div className="bg-opacity-50 min-h-screen p-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-white">Travel Blog</h1>
+        <h1 className="text-5xl font-bold text-center mb-8 text-black">Travel Blog</h1>
         <div className="grid gap-4 max-w-4xl mx-auto">
           {posts.map((post) => (
             <Link to={`/blog/${post.slug}`} key={post.slug}>

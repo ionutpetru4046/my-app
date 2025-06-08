@@ -11,11 +11,11 @@ const Contact = () => {
   
         {/* Background image section */}
         <div
-          className="h-64 bg-cover bg-center rounded-lg shadow-md"
+          className="h-64 bg-cover bg-center bg-no-repeat rounded-lg shadow-md"
           style={{ backgroundImage: "url('/images/travelImg.jpeg')" }}
         >
           {/* Optional overlay or text */}
-          <div className="h-full w-full bg-black/50 flex items-center justify-center text-white text-xl font-semibold">
+          <div className="h-full w-full bg-black/30 flex items-center justify-center text-white text-xl font-semibold">
             Thank you for reaching out!
           </div>
         </div>
