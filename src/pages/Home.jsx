@@ -1,4 +1,4 @@
-import heroImg from '../assets/heroImg.jpeg'
+import heroImg from '../assets/heroImg.avif'
 
 const Home = () => {
   return (
