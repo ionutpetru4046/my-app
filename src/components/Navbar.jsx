@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" className="h-10 w-10 rounded-full object-cover" />
+          <img src={logo} alt="Logo" className="h-20 w-20 rounded-full object-cover" />
         </Link>
 
         {/* Desktop Menu */}

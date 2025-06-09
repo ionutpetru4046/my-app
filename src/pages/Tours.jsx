@@ -84,7 +84,7 @@ const Tours = () => {
                 <p className="text-sm text-gray-600 mb-4">{tour.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-blue-600">{tour.price}</span>
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                  <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 cursor-pointer">
                     Book Now
                   </button>
                 </div>
@@ -98,7 +98,7 @@ const Tours = () => {
           <button
             onClick={handlePrev}
             disabled={currentPage === 1}
-            className="bg-white text-black px-4 py-2 rounded disabled:opacity-50"
+            className="bg-white text-black px-4 py-2 rounded disabled:opacity-50 cursor-pointer"
           >
             Previous
           </button>
@@ -108,7 +108,7 @@ const Tours = () => {
           <button
             onClick={handleNext}
             disabled={currentPage === totalPages}
-            className="bg-white text-black px-4 py-2 rounded disabled:opacity-50"
+            className="bg-white text-black px-4 py-2 rounded disabled:opacity-50 cursor-pointer"
           >
             Next
           </button>
